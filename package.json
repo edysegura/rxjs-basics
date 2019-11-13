@@ -1,5 +1,9 @@
 {
   "private": true,
+  "scripts": {
+    "from-event": "parcel ./from-event/index.html -d dev --open",
+    "interval": "parcel ./interval/index.html -d dev --open"
+  },
   "dependencies": {
     "rxjs": "^6.5.3"
   },
