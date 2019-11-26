@@ -7,7 +7,7 @@
     "interval": "parcel ./interval/index.html -d dev --open",
     "merge-map": "parcel ./merge-map/index.html -d dev --open",
     "switch-map": "parcel ./switch-map/index.html -d dev --open",
-    "take": "parcel ./merge-map/index.html -d dev --open"
+    "take": "parcel ./take/index.html -d dev --open"
   },
   "dependencies": {
     "rxjs": "^6.5.3"
