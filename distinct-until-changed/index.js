@@ -2,13 +2,12 @@ import { fromEvent } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
 
 const searchField = document.querySelector('input')
-const output = document.querySelector('output')
 
 const getInputValue = () =>
   map(event => event.target.value)
 
 const showInputValue = value => {
-  console.log('Passed here!')
+  const output = document.querySelector('output')
   output.textContent = value
 }
 

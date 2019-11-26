@@ -20,7 +20,6 @@ const mergeValues = firstFieldValue => {
 }
 
 const showInputValue = value => {
-  console.log('Passed here!')
   output.textContent = value
 }
 
