@@ -3,14 +3,13 @@ import { mergeMap, map } from 'rxjs/operators';
 
 const firstField = document.getElementById('first')
 const secondField = document.getElementById('second')
-const output = document.querySelector('output')
 
 const getFieldValue = () =>
   map(event => event.target.value)
 
 const mergeValues = firstFieldValue => {
   const concatenateValues = secondFieldValue =>
-    `${ firstFieldValue } ${ secondFieldValue }`
+    `${firstFieldValue} ${secondFieldValue}`
 
   return secondField$
     .pipe(
@@ -20,6 +19,7 @@ const mergeValues = firstFieldValue => {
 }
 
 const showInputValue = value => {
+  const output = document.querySelector('output')
   output.textContent = value
 }
 
