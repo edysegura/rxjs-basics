@@ -1,7 +1,6 @@
 import { from } from 'rxjs'
 import { map } from 'rxjs/operators'
 
-
 const toHtmlElement = name => {
   const element = document.createElement('p')
   element.textContent = name
